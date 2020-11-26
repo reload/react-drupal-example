@@ -1,0 +1,6 @@
+name: React example
+type: module
+description: A small no frills example of using React in Drupal without any tool chain.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

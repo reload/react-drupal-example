@@ -1,0 +1,7 @@
+react_example.settings_form:
+  path: '/admin/config/system/react-example'
+  defaults:
+    _title: 'React example settings'
+    _form: 'Drupal\react_example\Form\SettingsForm'
+  requirements:
+    _permission: 'administer react_example configuration'

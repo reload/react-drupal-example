@@ -1,0 +1,6 @@
+react_example.settings_form:
+  title: React example
+  description: Configure React example.
+  parent: system.admin_config_system
+  route_name: react_example.settings_form
+  weight: 10

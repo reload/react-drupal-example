@@ -1,0 +1,4 @@
+administer react_example configuration:
+  title: 'Administer react_example configuration'
+  description: 'Optional description.'
+  restrict access: true

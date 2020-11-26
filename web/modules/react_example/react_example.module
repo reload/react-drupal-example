@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Module file for the React example module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function react_example_theme() {
+  return [
+    'react_example' => [
+      'variables' => [
+        'id' => null,
+        'initial_name' => null
+      ]
+    ]
+  ];
+}

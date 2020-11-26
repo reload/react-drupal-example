@@ -1,0 +1,21 @@
+uuid: 1648bfa9-964b-4f36-a0c9-ea5e02fd8ab7
+langcode: en
+status: true
+dependencies:
+  module:
+    - react_example
+  theme:
+    - bartik
+id: reactexample_2
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: react_example_react_example
+settings:
+  id: react_example_react_example
+  label: 'React example 2'
+  provider: react_example
+  label_display: '0'
+  initial_name: 'Drupal 2'
+visibility: {  }

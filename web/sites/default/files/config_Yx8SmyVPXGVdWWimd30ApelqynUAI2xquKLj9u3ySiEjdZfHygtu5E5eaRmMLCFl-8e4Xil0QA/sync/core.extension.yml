@@ -31,6 +31,7 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  react_example: 0
   search: 0
   shortcut: 0
   system: 0
