@@ -54,6 +54,15 @@ function Title({ name, id }) {
 
 ```
 
+## Take a look at
+
+[modules/react_example/src/Form/SettingsForm.php](https://github.com/reload/react-drupal-example/blob/main/web/modules/react_example/src/Form/SettingsForm.php)
+[modules/react_example/src/Plugin/Block/ReactExampleBlock.php](https://github.com/reload/react-drupal-example/blob/main/web/modules/react_example/src/Plugin/Block/ReactExampleBlock.php)
+[modules/react_example/react_example.module](https://github.com/reload/react-drupal-example/blob/main/web/modules/react_example/react_example.module)
+[modules/react_example/templates/react-example.html.twig](https://github.com/reload/react-drupal-example/blob/main/web/modules/react_example/templates/react-example.html.twig)
+[modules/react_example/react_example.libraries.yml](https://github.com/reload/react-drupal-example/blob/main/web/modules/react_example/react_example.libraries.yml)
+[modules/react_example/js/react-example.js](https://github.com/reload/react-drupal-example/blob/main/web/modules/react_example/js/react-example.js)
+
 Writing modern web applications comes with a lot of assumptions.
 There should be scoped styling (CSS modules, CSS-in-JS) included,
 automatic browser target configuration, intelligent, tree-shake-able module
