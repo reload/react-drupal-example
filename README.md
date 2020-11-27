@@ -6,4 +6,50 @@ interest into the rediscovered world of tools light development.
 
 ![React in Drupal example](https://raw.githubusercontent.com/reload/react-drupal-example/main/example_assets/react_in_drupal.gif)
 
-https://github.com/reload/react-drupal-example/blob/65cb60dc81558edef2d4ec5a48fb79bc92b5435f/web/modules/react_example/js/react-example.js#L1-L43
+```javascript
+
+let html, useState;
+const BLOCK_CLASS = "react-example";
+
+(function (Drupal, drupalSettings) {
+  Drupal.behaviors.reactExample = {
+    attach: function (_context, _settings) {
+      html = htm.bind(React.createElement);
+      useState = React.useState;
+      document.querySelectorAll(`.${BLOCK_CLASS}`).forEach((node) => {
+        ReactDOM.render(html`<${App} ...${node.dataset} />`, node);
+      });
+    },
+  };
+})(Drupal, drupalSettings);
+
+function App({ blockId, initialName }) {
+  const [name, setName] = useState(initialName);
+
+  return html`
+    <div>
+      <${Title} name=${name} id=${blockId} />
+      <button onClick=${() => setName("React")}>
+        Press me to draw!
+      </button>
+      ${name === "React" &&
+      html`
+        <div style=${{ border: "1px solid black" }}>
+          <${SketchField}
+            width="100%"
+            height="500px"
+            tool=${Tools.Pencil}
+            lineColor="gold"
+            lineWidth="3"
+          />
+        </div>
+      `}
+    </div>
+  `;
+}
+
+function Title({ name, id }) {
+  return html`<h1>This is block: ${id} with the name of ${name}!</h1> `;
+}
+
+```
