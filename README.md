@@ -53,3 +53,26 @@ function Title({ name, id }) {
 }
 
 ```
+
+Writing modern web applications comes with a lot of assumptions.
+There should be scoped styling (CSS modules, CSS-in-JS) included,
+automatic browser target configuration, intelligent, tree-shake-able module
+bundling and so on.
+
+This example is not trying to address any of that. Those are quality of life
+features that most web application developers have gotten used to and expect.
+
+But sometimes you do not need or want to bring out the big guns but you need
+a little more control than what is easily accessible in the browser provided
+libraries. Previously one would grab for jQuery, which is still a great tool,
+but the expectations of your web applications have changed and a library such as
+React (or Vue, Preact etc.) is better suited to some of our highly interactive
+web applications.
+
+This is all well and good if you are good with generating your HTML markup on
+the client. What if it's crucial that your markup is generated on the server?
+One could go down the rabbit hole of getting React server side rendered but then
+this example would loose it's simplicity.
+An alternative is to let Drupal and the Twig template language do what it's
+good at and utilize a project such as [Stimulus](https://stimulusjs.org/) that
+takes existing HTML and injects it with a bit of state management power.
