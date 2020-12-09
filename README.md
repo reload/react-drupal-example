@@ -85,3 +85,23 @@ this example would loose it's simplicity.
 An alternative is to let Drupal and the Twig template language do what it's
 good at and utilize a project such as [Stimulus](https://stimulusjs.org/) that
 takes existing HTML and injects it with a bit of state management power.
+
+## Getting up and running
+
+### Install Drupal
+Get the Drupal site up and running. This can be done using [Lando](https://lando.dev).
+
+```
+lando start
+lando composer install
+lando drush site:install -y
+lando drush en react_example -y
+```
+
+### Place the block
+
+Log into the site, go to the block configuration and place the React example block into the content section.
+
+### See React in action
+
+Go to the frontpage and the see the block being rendered.
