@@ -1,7 +1,0 @@
-block.settings.react_example_preact_example:
-  type: block_settings
-  label: 'Preact example block'
-  mapping:
-    foo:
-      type: string
-      label: Foo
