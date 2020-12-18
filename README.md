@@ -94,7 +94,7 @@ Get the Drupal site up and running. This can be done using [Lando](https://lando
 ```
 lando start
 lando composer install
-lando drush site:install -y
+lando drush si --db-url=mysql://drupal9:drupal9@database/drupal9 -y
 lando drush en react_example -y
 ```
 
